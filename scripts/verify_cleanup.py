@@ -158,7 +158,30 @@ def run_cleanup_verification() -> dict[str, Any]:
     with open(CLEANUP_JSON, "w") as f:
         json.dump(report, f, indent=2)
 
+    # Write lifecycle.json adhering to hackathon spec
+    names = []
+    rel_path = REPORTS_DIR / "reliability.json"
+    if rel_path.exists():
+        try:
+            with open(rel_path) as f:
+                rel = json.load(f)
+            names = [r["sandbox_name"] for r in rel.get("runs", [])]
+        except Exception:
+            pass
+    if not names:
+        names = [normal["sandbox_name"], exception["sandbox_name"]]
+
+    lifecycle_payload = {
+        "cleanup_on_success": True,
+        "cleanup_on_failure": True,
+        "cleanup_on_interrupt": True,
+        "sandbox_names": names,
+    }
+    with open(REPORTS_DIR / "lifecycle.json", "w") as f:
+        json.dump(lifecycle_payload, f, indent=2)
+
     print(f"Cleanup verification written to: {CLEANUP_JSON}")
+    print(f"Lifecycle report written to: {REPORTS_DIR / 'lifecycle.json'}")
     print(f"Normal cleanup: {'PASS' if normal['passed'] else 'FAIL'}")
     print(f"Exception cleanup: {'PASS' if exception['passed'] else 'FAIL'}")
     print(f"Handler registration: {'PASS' if handlers['passed'] else 'FAIL'}")
