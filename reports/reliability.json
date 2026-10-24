@@ -1,0 +1,212 @@
+{
+  "run_count": 20,
+  "success_rate": 1.0,
+  "median_wall_clock_s": 0.055,
+  "p90_wall_clock_s": 0.056,
+  "median_boot_to_ready_s": 0.267,
+  "total_cost_usd": 0.0,
+  "cost_note": "Local runtime: $0.00/hr; Cloud Micro: $0.015/hr",
+  "postmortem_path": "reports/postmortem.md",
+  "runs": [
+    {
+      "sandbox_name": "sbx-wynz167y",
+      "package": "configreader",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 5.202,
+      "boot_to_ready_s": 0.192,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-jzf376rn",
+      "package": "dateformat",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.232,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-syo40ic8",
+      "package": "envleaker",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.054,
+      "boot_to_ready_s": 0.261,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-xzs0kv3b",
+      "package": "helloworld",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.062,
+      "boot_to_ready_s": 0.228,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-p8gg6dt0",
+      "package": "jsonutils",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.054,
+      "boot_to_ready_s": 0.328,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-xmlurzbb",
+      "package": "listops",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.199,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-4wuzyvxu",
+      "package": "loghelper",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.215,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-r7cjb6ma",
+      "package": "mathconst",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.053,
+      "boot_to_ready_s": 0.333,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-rrlz9oc2",
+      "package": "netprobe",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.246,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-5adtyyu3",
+      "package": "procspawn",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.301,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-oed7mnt2",
+      "package": "promptinject",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.185,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-wxkememm",
+      "package": "safemath",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.278,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-336vmh26",
+      "package": "sneakywrite",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.276,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-zsivpvcf",
+      "package": "strtools",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.056,
+      "boot_to_ready_s": 0.272,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-vyijhgfa",
+      "package": "validators",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.054,
+      "boot_to_ready_s": 0.324,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-5dnm3rz5",
+      "package": "configreader",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.275,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-51srzpzw",
+      "package": "dateformat",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.054,
+      "boot_to_ready_s": 0.203,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-t9c71p77",
+      "package": "envleaker",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.053,
+      "boot_to_ready_s": 0.275,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-11phcna6",
+      "package": "helloworld",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.055,
+      "boot_to_ready_s": 0.228,
+      "cost_usd": 0.0,
+      "error": null
+    },
+    {
+      "sandbox_name": "sbx-erzsvy3m",
+      "package": "jsonutils",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 0.054,
+      "boot_to_ready_s": 0.324,
+      "cost_usd": 0.0,
+      "error": null
+    }
+  ]
+}
