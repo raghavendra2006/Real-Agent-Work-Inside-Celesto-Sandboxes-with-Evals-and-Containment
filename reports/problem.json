@@ -1,0 +1,6 @@
+{
+    "who": "Security-conscious developers and student teams who must vet a pip/npm package before adding it to their project to avoid supply-chain attacks",
+    "agent_work": "An LLM agent in a 10-step loop that, inside a Celesto microVM, creates a clean baseline, installs the target package with network OFF, imports it, records files touched / processes spawned / attempted connections, and produces a risk report",
+    "proof_output": "reports/detonation/<package>.json containing verdict, evidence list, and the sandbox name",
+    "idea_source": "idea_bank"
+}
