@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-24T15:02:06Z",
+  "normal_cleanup": {
+    "sandbox_name": "sbx-rg6vvsrv",
+    "active_before_cleanup": true,
+    "active_after_cleanup": false,
+    "final_state": "deleted",
+    "passed": true
+  },
+  "exception_cleanup": {
+    "sandbox_name": "sbx-r033l1lp",
+    "exception_handled": true,
+    "active_after_exception": false,
+    "final_state": "deleted",
+    "passed": true
+  },
+  "handlers": {
+    "cleanup_registered_flag": true,
+    "sigint_hooked": true,
+    "sigterm_hooked": true,
+    "passed": true
+  },
+  "orphan_cleanup": {
+    "passed": true,
+    "detail": "cleanup_orphans() executed successfully"
+  },
+  "active_sandboxes_remaining": 0,
+  "all_passed": true,
+  "elapsed_s": 13.2496
+}
