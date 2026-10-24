@@ -1,0 +1,409 @@
+{"ts": "2026-10-24T15:04:00.538325+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-pdvly7cd"}
+{"ts": "2026-10-24T15:04:00.589645+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:04:02.623944+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:04:02.624970+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:04:02.624970+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:04:02.624970+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:04:04.666771+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:04:04.667285+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:04:04.668296+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:04:08.794414+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:04:30.234308+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-vor6dbvw"}
+{"ts": "2026-10-24T15:04:30.284753+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:04:32.316747+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:04:32.316747+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:04:32.317744+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:04:32.317744+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:04:34.353265+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:04:34.353265+00:00", "event": "step_failed", "step": 7, "error": "FAULT_INJECTION: Step 7 killed for demo", "fault_injected": true}
+{"ts": "2026-10-24T15:04:34.354273+00:00", "event": "policy_applied", "policy": "rollback", "step": 7, "action": "restoring before-detonation snapshot"}
+{"ts": "2026-10-24T15:04:38.441008+00:00", "event": "rollback_complete", "step": 7}
+{"ts": "2026-10-24T15:04:38.441525+00:00", "event": "retry_succeeded", "step": 7}
+{"ts": "2026-10-24T15:04:38.441525+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:04:38.442546+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:04:42.537318+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:05:53.292150+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-heb0fz8e"}
+{"ts": "2026-10-24T15:05:53.343597+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:05:55.394192+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:05:55.394192+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:05:55.395193+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:05:55.395193+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:05:57.436209+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:05:57.436209+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:05:57.437211+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:06:01.548155+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:04.832344+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-bz63ffru"}
+{"ts": "2026-10-24T15:07:04.883123+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:04.883123+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:04.883123+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:04.883123+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:04.883123+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:04.883123+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:04.885038+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:04.885038+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:08.991150+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:08.992157+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-ipu26d43"}
+{"ts": "2026-10-24T15:07:09.042935+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:09.042935+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:09.042935+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:09.042935+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:09.043959+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:09.043959+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:09.043959+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:09.043959+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:13.159298+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:13.161311+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-4ao5njxa"}
+{"ts": "2026-10-24T15:07:13.212125+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:13.212125+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:13.213140+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:13.213140+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:13.214139+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:13.214652+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:13.214652+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:13.215668+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:17.366893+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:17.369416+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-p74aezex"}
+{"ts": "2026-10-24T15:07:17.420931+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:17.422463+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:17.424342+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:17.424972+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:17.425875+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:17.426386+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:17.426918+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:17.427515+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:21.555525+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:21.558087+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-j7xlqijt"}
+{"ts": "2026-10-24T15:07:21.608675+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:21.609693+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:21.609693+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:21.610693+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:21.611675+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:21.612190+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:21.612765+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:21.613354+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:25.749935+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:25.752461+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-wc3iw67t"}
+{"ts": "2026-10-24T15:07:25.804870+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:25.804870+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:25.804870+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:25.806379+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:25.807398+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:25.807398+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:25.808397+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:25.809398+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:29.970303+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:29.972301+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-b0clqud2"}
+{"ts": "2026-10-24T15:07:30.023685+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:30.024200+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:30.025214+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:30.025214+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:30.026217+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:30.026732+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:30.026732+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:30.027748+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:07:34.171400+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:07:34.172411+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-dqj3tq2u"}
+{"ts": "2026-10-24T15:07:34.224715+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:07:34.225230+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:07:34.226247+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:07:34.226247+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:07:34.227244+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:07:34.227244+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:07:34.227244+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:07:34.228247+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:23.903276+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-zjw4soq6"}
+{"ts": "2026-10-24T15:08:23.954961+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:23.954961+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:23.954961+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:23.954961+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:23.956364+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:23.956364+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:23.957368+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:23.957368+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:27.990525+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:27.992600+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-b0y3id5l"}
+{"ts": "2026-10-24T15:08:28.043205+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.043205+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.043205+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.044226+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.044226+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.044226+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.045457+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.045457+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.045457+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.046485+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-gmsgke9b"}
+{"ts": "2026-10-24T15:08:28.097186+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.097833+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.098854+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.099362+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.099903+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.099903+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.099903+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.100918+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.100918+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.101912+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-6aqpdeib"}
+{"ts": "2026-10-24T15:08:28.152615+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.152615+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.153633+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.153633+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.160856+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.161369+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.162388+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.162388+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.162388+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.163385+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-a0v5tbq7"}
+{"ts": "2026-10-24T15:08:28.214541+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.214541+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.215575+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.215575+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.216589+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.216589+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.216589+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.216589+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.217591+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.217591+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-v73x95s2"}
+{"ts": "2026-10-24T15:08:28.268674+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.269189+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.269189+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.269189+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.269189+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.270203+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.270203+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.270203+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.271202+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.272209+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-libkg6j0"}
+{"ts": "2026-10-24T15:08:28.323426+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.323426+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.323426+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.323426+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.324926+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.324926+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.324926+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.324926+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.324926+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.326806+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-2txbt7yn"}
+{"ts": "2026-10-24T15:08:28.377337+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.377852+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.377852+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.377852+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.378429+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.378429+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.378972+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.378972+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.378972+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.379981+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-yl1kbuj2"}
+{"ts": "2026-10-24T15:08:28.431137+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.431137+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.432150+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.432150+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.432150+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.433146+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.433146+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.433146+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.433146+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.434592+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-tq4337zf"}
+{"ts": "2026-10-24T15:08:28.485947+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.486553+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.486553+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.487100+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.487100+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.487100+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.487635+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.488148+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.488148+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.489759+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-zrb15whe"}
+{"ts": "2026-10-24T15:08:28.540296+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.541368+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.541368+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.541368+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.541368+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.542595+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.542595+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.542595+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.543662+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.544169+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-vnk3cjse"}
+{"ts": "2026-10-24T15:08:28.595597+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.596214+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.596748+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.596748+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.596748+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.596748+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.598283+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.598283+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.598283+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.599295+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-8hrv1umo"}
+{"ts": "2026-10-24T15:08:28.650901+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.650901+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.651932+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.651932+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.652932+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.652932+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.652932+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.652932+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.653929+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.653929+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-7vu1c5j5"}
+{"ts": "2026-10-24T15:08:28.705456+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.705456+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.705456+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.706473+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.706473+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.707467+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.707467+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.707467+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.708785+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.709778+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-9zqghay8"}
+{"ts": "2026-10-24T15:08:28.761108+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.761626+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.761626+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.761626+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.762818+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.762818+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.762818+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.762818+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.762818+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.764209+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-kebjvb8d"}
+{"ts": "2026-10-24T15:08:28.815461+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.815461+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.816469+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.816469+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.816469+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.817684+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.817684+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.818687+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.818687+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.819683+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-kq6810k2"}
+{"ts": "2026-10-24T15:08:28.870579+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.870579+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.871598+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.871598+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.871598+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.871598+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.871598+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.872592+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.872592+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.873593+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-n3a6dy98"}
+{"ts": "2026-10-24T15:08:28.924718+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.924718+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.924718+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.924718+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.924718+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.925890+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.925890+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.925890+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.925890+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.926884+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-tbw3x6bs"}
+{"ts": "2026-10-24T15:08:28.977974+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:28.978524+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:28.979053+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:28.979053+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:28.979644+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:28.979644+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:28.980209+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:28.980768+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:28.980768+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:28.982466+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-glghezpl"}
+{"ts": "2026-10-24T15:08:29.033417+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:29.033967+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:29.033967+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:29.034505+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:29.035053+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:29.035053+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:29.035053+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:29.035053+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:29.035053+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:47.034567+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-ga7vsklk"}
+{"ts": "2026-10-24T15:08:47.034567+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-e08ngi11"}
+{"ts": "2026-10-24T15:08:47.035101+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-zw87mtz6"}
+{"ts": "2026-10-24T15:08:47.035101+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-9z4i3hbk"}
+{"ts": "2026-10-24T15:08:47.085751+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:47.086272+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:47.086272+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:47.085751+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:47.086821+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:08:47.086821+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:47.086821+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:47.087362+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:47.087362+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:47.087362+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:08:47.088512+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:47.087968+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:47.088512+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:47.088512+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:47.088512+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:08:47.089030+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:47.089030+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:47.089030+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:47.089554+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:47.089554+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:08:47.090114+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:47.090662+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:47.090114+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:47.090114+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:47.090662+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:08:47.091201+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:47.091201+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:47.091201+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:47.091201+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:47.092291+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:47.092291+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:47.092291+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:47.092291+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:08:47.092842+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:47.092842+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:47.092842+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:47.093501+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:47.093501+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:08:47.094588+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:47.095670+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:08:51.143246+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:51.143246+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:51.144244+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:08:51.143246+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:10:31.088918+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-npy6rfg8"}
+{"ts": "2026-10-24T15:10:31.139694+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:10:31.140706+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:10:31.140706+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:10:31.141710+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:10:31.142940+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:10:31.143494+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:10:31.144048+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:10:31.144582+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:10:35.202450+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:10:35.209900+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-69v8p9ay"}
+{"ts": "2026-10-24T15:10:35.260923+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:10:35.261438+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:10:35.262453+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:10:35.262453+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:10:35.263462+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:10:35.264455+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:10:35.264455+00:00", "event": "step_failed", "step": 7, "error": "FAULT_INJECTION: Step 7 killed for demo", "fault_injected": true}
+{"ts": "2026-10-24T15:10:35.265463+00:00", "event": "policy_applied", "policy": "rollback", "step": 7, "action": "restoring before-detonation snapshot"}
+{"ts": "2026-10-24T15:10:35.265463+00:00", "event": "rollback_complete", "step": 7}
+{"ts": "2026-10-24T15:10:35.266984+00:00", "event": "retry_succeeded", "step": 7}
+{"ts": "2026-10-24T15:10:35.268003+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:10:35.269010+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:10:35.269524+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:12:01.170788+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-9djoazuv"}
+{"ts": "2026-10-24T15:12:01.223128+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:12:01.223648+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:12:01.224117+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:12:01.224634+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:12:01.225647+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:12:01.226649+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:12:01.227984+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:12:01.228496+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:12:05.284109+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:12:05.291345+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-8apc9eyk"}
+{"ts": "2026-10-24T15:12:05.342699+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:12:05.343958+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:12:05.344540+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:12:05.345051+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:12:05.345583+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:12:05.346395+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:12:05.347137+00:00", "event": "step_failed", "step": 7, "error": "FAULT_INJECTION: Step 7 killed for demo", "fault_injected": true}
+{"ts": "2026-10-24T15:12:05.347595+00:00", "event": "policy_applied", "policy": "rollback", "step": 7, "action": "restoring before-detonation snapshot"}
+{"ts": "2026-10-24T15:12:05.348104+00:00", "event": "rollback_complete", "step": 7}
+{"ts": "2026-10-24T15:12:05.349221+00:00", "event": "retry_succeeded", "step": 7}
+{"ts": "2026-10-24T15:12:05.349732+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:12:05.350516+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:12:05.351033+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
