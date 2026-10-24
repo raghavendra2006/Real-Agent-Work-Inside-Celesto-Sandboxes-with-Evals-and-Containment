@@ -1,0 +1,36 @@
+{
+  "package": "sneakywrite",
+  "sandbox_name": "sbx-8apc9eyk",
+  "started_at": "2026-10-24T15:12:05.290330+00:00",
+  "steps_completed": 10,
+  "verdict": "suspicious",
+  "evidence": [
+    {
+      "type": "network_off_verified",
+      "detail": "curl to external host failed inside sandbox (mode='off')"
+    },
+    {
+      "type": "fault_injection_rollback",
+      "detail": "Step 7 failed due to fault injection, rolled back and retried successfully"
+    },
+    {
+      "type": "behavioral_analysis",
+      "new_files": [
+        "/tmp/.sneaky_marker"
+      ],
+      "import_succeeded": true,
+      "network_attempts": "none"
+    },
+    {
+      "type": "llm_analysis",
+      "verdict": "suspicious",
+      "reasoning": "Heuristic analysis (LLM offline): Package exhibited suspicious activity: touched hidden marker files (['/tmp/.sneaky_marker']) or initiated network/process probes."
+    }
+  ],
+  "error": null,
+  "wall_clock_s": 0.061,
+  "boot_to_ready_s": 0.325,
+  "tokens_used": 0,
+  "fault_injected": true,
+  "finished_at": "2026-10-24T15:12:05.351617+00:00"
+}

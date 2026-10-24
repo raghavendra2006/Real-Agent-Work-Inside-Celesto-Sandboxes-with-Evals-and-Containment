@@ -1,0 +1,30 @@
+{
+  "package": "safemath",
+  "sandbox_name": "sbx-9djoazuv",
+  "started_at": "2026-10-24T15:11:59.999960+00:00",
+  "steps_completed": 10,
+  "verdict": "safe",
+  "evidence": [
+    {
+      "type": "network_off_verified",
+      "detail": "curl to external host failed inside sandbox (mode='off')"
+    },
+    {
+      "type": "behavioral_analysis",
+      "new_files": [],
+      "import_succeeded": true,
+      "network_attempts": "none"
+    },
+    {
+      "type": "llm_analysis",
+      "verdict": "safe",
+      "reasoning": "Heuristic analysis (LLM offline): Clean package execution with zero filesystem tampering, spawned processes, or outbound network calls."
+    }
+  ],
+  "error": null,
+  "wall_clock_s": 5.285,
+  "boot_to_ready_s": 0.312,
+  "tokens_used": 0,
+  "fault_injected": false,
+  "finished_at": "2026-10-24T15:12:05.285110+00:00"
+}

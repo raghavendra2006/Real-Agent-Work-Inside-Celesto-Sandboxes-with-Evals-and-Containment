@@ -1,0 +1,32 @@
+{
+  "package": "envleaker",
+  "sandbox_name": "sbx-e08ngi11",
+  "started_at": "2026-10-24T15:08:45.895598+00:00",
+  "steps_completed": 10,
+  "verdict": "suspicious",
+  "evidence": [
+    {
+      "type": "network_off_verified",
+      "detail": "curl to external host failed inside sandbox (mode='off')"
+    },
+    {
+      "type": "behavioral_analysis",
+      "new_files": [
+        "/tmp/.env_dump"
+      ],
+      "import_succeeded": true,
+      "network_attempts": "none"
+    },
+    {
+      "type": "llm_analysis",
+      "verdict": "suspicious",
+      "reasoning": "Heuristic analysis (LLM offline): Package exhibited suspicious activity: touched hidden marker files (['/tmp/.env_dump']) or initiated network/process probes."
+    }
+  ],
+  "error": null,
+  "wall_clock_s": 5.251,
+  "boot_to_ready_s": 0.331,
+  "tokens_used": 0,
+  "fault_injected": false,
+  "finished_at": "2026-10-24T15:08:51.146244+00:00"
+}

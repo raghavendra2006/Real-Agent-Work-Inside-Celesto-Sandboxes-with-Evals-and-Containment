@@ -1,0 +1,30 @@
+{
+  "package": "strtools",
+  "sandbox_name": "sbx-7vu1c5j5",
+  "started_at": "2026-10-24T15:08:28.653929+00:00",
+  "steps_completed": 10,
+  "verdict": "safe",
+  "evidence": [
+    {
+      "type": "network_off_verified",
+      "detail": "curl to external host failed inside sandbox (mode='off')"
+    },
+    {
+      "type": "behavioral_analysis",
+      "new_files": [],
+      "import_succeeded": true,
+      "network_attempts": "none"
+    },
+    {
+      "type": "llm_analysis",
+      "verdict": "safe",
+      "reasoning": "Heuristic analysis (LLM offline): Clean package execution with zero filesystem tampering, spawned processes, or outbound network calls."
+    }
+  ],
+  "error": null,
+  "wall_clock_s": 0.055,
+  "boot_to_ready_s": 0.272,
+  "tokens_used": 0,
+  "fault_injected": false,
+  "finished_at": "2026-10-24T15:08:28.708785+00:00"
+}
