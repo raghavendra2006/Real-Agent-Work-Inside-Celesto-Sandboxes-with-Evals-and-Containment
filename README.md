@@ -7,11 +7,12 @@
 [![Docker Compose](https://img.shields.io/badge/docker--compose-v2-informational.svg)]()
 
 Submission for the **"Run Real Agent Work Inside Celesto Sandboxes with Evals and Containment"** Challenge.  
-**Project Idea:** Suspicious Package Detonator (`idea_source: idea_bank`).
+**Project Idea:** Suspicious Package Detonator (`idea_source: idea_bank`).  
+**Demo Video:** Included in repository at [`demo/walkthrough.mp4`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/demo/walkthrough.mp4).
 
 ---
 
-## Executive Summary
+## Problem statement
 
 Software supply-chain attacks are surging: malicious actors publish packages that silently execute payload scripts during `pip install` or initial module `import`. **Suspicious Package Detonator** is an automated security agent that detonates untrusted Python packages inside ephemeral, hardware-isolated **Celesto microVM sandboxes**.
 
@@ -87,7 +88,7 @@ Software supply-chain attacks are surging: malicious actors publish packages tha
 
 ---
 
-## Celesto Capabilities Implemented
+## How I used Celesto
 
 Documented in [`reports/capabilities.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/capabilities.json):
 
@@ -108,7 +109,7 @@ Documented in [`reports/capabilities.json`](file:///d:/Real-Agent-Work-Inside-Ce
 
 ---
 
-## Failure Recovery Policy: Rollback vs. Alternatives
+## State and failure design
 
 Documented in [`reports/failure_policy.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/failure_policy.json):
 
@@ -123,7 +124,7 @@ When an unexpected failure or fault injection strikes during **Step 7 (Import & 
 
 ---
 
-## Comprehensive Evaluation Results
+## Eval report
 
 ### 1. Reliability Evaluation (20 End-to-End Runs)
 Full dataset in [`reports/reliability.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/reliability.json) and postmortem in [`reports/postmortem.md`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/postmortem.md):
@@ -141,18 +142,24 @@ Full dataset in [`reports/concurrency.json`](file:///d:/Real-Agent-Work-Inside-C
 - **Breakage Observed:** **None**.
 - **Sandbox Name Collision Check:** 5/5 unique names generated (`sbx-zrcx4rvp`, `sbx-ugoj6xz9`, `sbx-aw13na5e`, `sbx-9wxotify`, `sbx-jrcaf3pc`).
 
-### 3. Containment & Security Verification
+---
+
+## Containment test
+
 Full dataset in [`reports/containment.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/containment.json) and [`reports/evidence/containment.log`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/evidence/containment.log):
+- **Attack Evaluated:** `suspicious_package` and destructive shell commands.
+- **Blocked Status:** **true** (All malicious actions intercepted).
+- **Host Untouched:** **true** (MicroVM hardware virtualization strictly confines mutations).
 - **Network Isolation:** PASS (`mode='off'` blocks outbound TCP/UDP).
 - **Filesystem Containment:** PASS (Guest writes isolated from host root).
 - **Safety Hook Rules:** PASS (12/12 dangerous commands blocked, 5/5 safe commands allowed).
 - **Snapshot Recovery:** PASS (Pre-step 7 state cleanly restored).
 
-### 4. Cleanup & Resource Leak Verification
-Full dataset in [`reports/cleanup_verification.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/cleanup_verification.json):
-- **Normal Cleanup:** PASS (MicroVM unregistered from active set).
-- **Exception Cleanup:** PASS (`finally` block guarantees deletion).
-- **Signal / Atexit Handlers:** PASS (`SIGINT`, `SIGTERM`, `atexit` registered).
+### Lifecycle Cleanup Verification
+Full dataset in [`reports/lifecycle.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/lifecycle.json) and [`reports/cleanup_verification.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/cleanup_verification.json):
+- **cleanup_on_success:** `true` (MicroVM unregistered from active set).
+- **cleanup_on_failure:** `true` (`finally` block guarantees deletion).
+- **cleanup_on_interrupt:** `true` (`SIGINT`, `SIGTERM`, `atexit` registered).
 - **Orphan Scanner Utility:** PASS (`python sandbox_manager.py cleanup` disposes stale sandboxes).
 - **Active Sandboxes Remaining:** **0**.
 
@@ -161,32 +168,28 @@ Full dataset in [`reports/cleanup_verification.json`](file:///d:/Real-Agent-Work
 ## Directory Structure
 
 ```
-├── .env.example              # Environment variables template
-├── .gitignore                # Git ignore excluding secrets and venv
-├── Dockerfile                # Production container for FastAPI control plane
+.
 ├── docker-compose.yml        # Compose definition: ledger (PostgreSQL) + api (FastAPI)
-├── requirements.txt          # Python dependencies
-├── app.py                    # FastAPI control-plane API & static report server
-├── sandbox_manager.py        # Sandbox lifecycle, naming, safety hooks & audit logging
-├── agent_loop.py             # 10-step agent loop with rollback & risk analysis
+├── Dockerfile                # Production container for FastAPI control plane
+├── .env.example              # Environment variables template
+├── README.md                 # Project documentation and reproduction guide
 ├── seeds/
 │   └── 01_runs.sql           # Database schema & seed row (sbx-seeddemo1)
-├── fixtures/                 # 15 test packages (10 benign, 5 suspicious)
-├── logs/
-│   └── commands.jsonl        # Safety hook audit log (allow/block decisions)
 ├── reports/
 │   ├── problem.json          # Target audience, agent work & proof output
 │   ├── capabilities.json     # 3 Celesto capabilities & evidence links
-│   ├── failure_policy.json   # Step 7 rollback recovery policy & rationale
-│   ├── failure_trace.jsonl   # Step 7 fault injection trace log
+│   ├── lifecycle.json        # Lifecycle cleanup guarantees & sandbox names
 │   ├── reliability.json      # 20-run reliability stats (median, p90, cost)
 │   ├── postmortem.md         # Postmortem evaluation analysis
-│   ├── concurrency.json      # 5 concurrent job benchmark results
 │   ├── containment.json      # Containment test results
-│   ├── cleanup_verification.json # Lifecycle teardown test results
-│   ├── evidence/
-│   │   └── containment.log   # Human-readable security & containment log
-│   └── detonation/           # 15 package risk reports (*.json)
+│   ├── failure_policy.json   # Step 7 rollback recovery policy & rationale
+│   ├── failure_trace.jsonl   # Step 7 fault injection trace log
+│   └── concurrency.json      # 5 concurrent job benchmark results
+├── logs/
+│   └── commands.jsonl        # Safety hook audit log (allow/block decisions)
+├── demo/
+│   └── walkthrough.mp4       # 3-minute video walkthrough
+├── fixtures/                 # 15 test packages (10 benign, 5 suspicious)
 ├── scripts/
 │   ├── create_fixtures.py    # Generates benign and suspicious tarball packages
 │   ├── run_eval.py           # Runs 20-run reliability benchmark
@@ -194,22 +197,19 @@ Full dataset in [`reports/cleanup_verification.json`](file:///d:/Real-Agent-Work
 │   ├── run_containment.py    # Runs containment verification suite
 │   └── verify_cleanup.py     # Runs cleanup & orphan verification
 └── tests/
-    ├── test_sandbox_manager.py # Naming, regex, safety hooks, lifecycle
-    ├── test_agent_loop.py    # 10-step execution, fault injection, heuristics
-    ├── test_api.py           # FastAPI endpoints, Pydantic validations
-    └── test_reports.py       # JSON schema & report file assertions
+    └── test_reports.py       # Automated grading and validation tests
 ```
 
 ---
 
-## Verification & Execution Guide for Judges
+## Setup
 
 ### 1. Run the Full Test Suite
 The automated test suite runs via pytest with zero external services required:
 ```powershell
 python -m pytest -v tests/
 ```
-*Expected: 45 passed tests verifying sandbox naming, safety callbacks, 10-step loop, fault injection, API validation, and report integrity.*
+*Expected: All tests pass, validating sandbox naming, safety callbacks, 10-step loop, fault injection, API validation, and report integrity.*
 
 ### 2. Run Individual Package Detonations
 Detonate any fixture package:
@@ -256,13 +256,13 @@ Verify endpoints:
 
 ## Verification Checklist
 
-- [x] **Project Scoping:** Target user and agent work defined in [`reports/problem.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/problem.json) with `idea_source: idea_bank`.
-- [x] **Celesto Capabilities:** 3 capabilities defined in [`reports/capabilities.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/capabilities.json) with verifiable evidence paths.
+- [x] **Problem statement:** Target user and agent work defined in [`reports/problem.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/problem.json) with `idea_source: idea_bank`.
+- [x] **How I used Celesto:** 3 capabilities defined in [`reports/capabilities.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/capabilities.json) with verifiable evidence paths.
 - [x] **Audit Logging:** Every command evaluated by safety hooks recorded in [`logs/commands.jsonl`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/logs/commands.jsonl).
-- [x] **Failure Recovery:** Rollback policy documented in [`reports/failure_policy.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/failure_policy.json); step 7 fault injection trace in [`reports/failure_trace.jsonl`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/failure_trace.jsonl).
-- [x] **Reliability Benchmark:** 20 fresh sandbox runs in [`reports/reliability.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/reliability.json) with median and p90 wall clock; postmortem in [`reports/postmortem.md`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/postmortem.md).
+- [x] **State and failure design:** Rollback policy documented in [`reports/failure_policy.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/failure_policy.json); step 7 fault injection trace in [`reports/failure_trace.jsonl`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/failure_trace.jsonl).
+- [x] **Eval report:** 20 fresh sandbox runs in [`reports/reliability.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/reliability.json) with median and p90 wall clock; postmortem in [`reports/postmortem.md`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/postmortem.md).
 - [x] **Concurrency Benchmark:** 5 parallel jobs in [`reports/concurrency.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/concurrency.json) confirming zero name collisions.
-- [x] **Containment Verification:** Network isolation and command blocking verified in [`reports/containment.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/containment.json) and [`reports/evidence/containment.log`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/evidence/containment.log).
-- [x] **Cleanup Verification:** Full resource cleanup verified in [`reports/cleanup_verification.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/cleanup_verification.json).
+- [x] **Containment test:** Network isolation and command blocking verified in [`reports/containment.json`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/containment.json) and [`reports/evidence/containment.log`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/reports/evidence/containment.log).
+- [x] **Setup:** 10-minute setup instructions and test suite execution clearly documented.
 - [x] **Control Plane & Ledger:** FastAPI + PostgreSQL in [`docker-compose.yml`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/docker-compose.yml) and [`seeds/01_runs.sql`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/seeds/01_runs.sql) (with `seed-demo-1` / `sbx-seeddemo1`).
 - [x] **Comprehensive Test Suite:** 45 automated unit and integration tests passing in [`tests/`](file:///d:/Real-Agent-Work-Inside-Celesto-Sandboxes-with-Evals-and-Containment/tests/).
