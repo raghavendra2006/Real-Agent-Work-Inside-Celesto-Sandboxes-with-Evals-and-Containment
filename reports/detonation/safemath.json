@@ -1,7 +1,7 @@
 {
   "package": "safemath",
-  "sandbox_name": "sbx-9djoazuv",
-  "started_at": "2026-10-24T15:11:59.999960+00:00",
+  "sandbox_name": "sbx-hkirloa7",
+  "started_at": "2026-10-24T15:21:24.997651+00:00",
   "steps_completed": 10,
   "verdict": "safe",
   "evidence": [
@@ -22,9 +22,9 @@
     }
   ],
   "error": null,
-  "wall_clock_s": 5.285,
-  "boot_to_ready_s": 0.312,
+  "wall_clock_s": 5.384,
+  "boot_to_ready_s": 0.285,
   "tokens_used": 0,
   "fault_injected": false,
-  "finished_at": "2026-10-24T15:12:05.285110+00:00"
+  "finished_at": "2026-10-24T15:21:30.381974+00:00"
 }
