@@ -1,17 +1,19 @@
-[
-    {
-        "id": "safety_hooks",
-        "why": "Pre-command callback that blocks dangerous shell commands (rm -rf /, curl|sh to unknown hosts, reading ~/.ssh or env dumps) by raising CommandBlockedError before they reach the guest. Every attempt, allowed or blocked, is appended to logs/commands.jsonl for full auditability.",
-        "evidence_path": "logs/commands.jsonl"
-    },
-    {
-        "id": "network_policy",
-        "why": "InternetSettings(mode='off') disables all outbound network access during detonation, preventing exfiltration of data or download of additional payloads. Evidence shows curl fails inside the guest when network is off.",
-        "evidence_path": "reports/evidence/containment.log"
-    },
-    {
-        "id": "snapshots",
-        "why": "Checkpoint 'before-detonation' taken before the risky import/execute step so a failure or compromise can roll back to a known-good state. Used for the step-7 rollback failure policy to restore and retry without recreating the full sandbox.",
-        "evidence_path": "reports/failure_trace.jsonl"
-    }
-]
+{
+    "capabilities": [
+        {
+            "id": "safety_hooks",
+            "why": "Pre-command callback that blocks dangerous shell commands (rm -rf /, curl|sh to unknown hosts, reading ~/.ssh or env dumps) by raising CommandBlockedError before they reach the guest. Every attempt, allowed or blocked, is appended to logs/commands.jsonl for full auditability.",
+            "evidence_path": "logs/commands.jsonl"
+        },
+        {
+            "id": "network_policy",
+            "why": "InternetSettings(mode='off') disables all outbound network access during detonation, preventing exfiltration of data or download of additional payloads. Evidence shows curl fails inside the guest when network is off.",
+            "evidence_path": "reports/evidence/containment.log"
+        },
+        {
+            "id": "snapshots",
+            "why": "Checkpoint 'before-detonation' taken before the risky import/execute step so a failure or compromise can roll back to a known-good state. Used for the step-7 rollback failure policy to restore and retry without recreating the full sandbox.",
+            "evidence_path": "reports/failure_trace.jsonl"
+        }
+    ]
+}
