@@ -135,10 +135,10 @@ def main():
     results.sort(key=lambda r: r["job_index"])
 
     report = {
+        "jobs": results,
         "concurrent_jobs": NUM_CONCURRENT,
         "overall_wall_clock_s": round(overall_wall_clock, 3),
         "breakage_notes": "; ".join(breakage_notes),
-        "results": results,
     }
 
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
