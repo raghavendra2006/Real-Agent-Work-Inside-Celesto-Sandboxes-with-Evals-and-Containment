@@ -1,0 +1,26 @@
+# Environment
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Python
+*.egg-info/
+dist/
+build/
+
+# Logs (tracked selectively)
+*.log
+!reports/evidence/*.log
