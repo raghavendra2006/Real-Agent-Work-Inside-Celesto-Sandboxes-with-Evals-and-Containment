@@ -407,3 +407,27 @@
 {"ts": "2026-10-24T15:12:05.349732+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
 {"ts": "2026-10-24T15:12:05.350516+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
 {"ts": "2026-10-24T15:12:05.351033+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:21:26.271517+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-hkirloa7"}
+{"ts": "2026-10-24T15:21:26.323909+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:21:26.323909+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:21:26.325931+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:21:26.326921+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:21:26.326921+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:21:26.328396+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:21:26.329590+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:21:26.330185+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:21:30.381397+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
+{"ts": "2026-10-24T15:21:30.395062+00:00", "event": "step_start", "step": 1, "action": "boot", "sandbox": "sbx-8b4sa8mj"}
+{"ts": "2026-10-24T15:21:30.446536+00:00", "event": "step_start", "step": 2, "action": "readiness_probe"}
+{"ts": "2026-10-24T15:21:30.447709+00:00", "event": "step_start", "step": 3, "action": "baseline_snapshot"}
+{"ts": "2026-10-24T15:21:30.448332+00:00", "event": "step_start", "step": 4, "action": "upload_fixture"}
+{"ts": "2026-10-24T15:21:30.449126+00:00", "event": "step_start", "step": 5, "action": "network_off"}
+{"ts": "2026-10-24T15:21:30.450289+00:00", "event": "step_start", "step": 6, "action": "install_package"}
+{"ts": "2026-10-24T15:21:30.451485+00:00", "event": "step_start", "step": 7, "action": "import_execute"}
+{"ts": "2026-10-24T15:21:30.452680+00:00", "event": "step_failed", "step": 7, "error": "FAULT_INJECTION: Step 7 killed for demo", "fault_injected": true}
+{"ts": "2026-10-24T15:21:30.453222+00:00", "event": "policy_applied", "policy": "rollback", "step": 7, "action": "restoring before-detonation snapshot"}
+{"ts": "2026-10-24T15:21:30.453825+00:00", "event": "rollback_complete", "step": 7}
+{"ts": "2026-10-24T15:21:30.455039+00:00", "event": "retry_succeeded", "step": 7}
+{"ts": "2026-10-24T15:21:30.455630+00:00", "event": "step_start", "step": 8, "action": "diff_state"}
+{"ts": "2026-10-24T15:21:30.456908+00:00", "event": "step_start", "step": 9, "action": "llm_analysis"}
+{"ts": "2026-10-24T15:21:30.458089+00:00", "event": "step_start", "step": 10, "action": "write_report_cleanup"}
