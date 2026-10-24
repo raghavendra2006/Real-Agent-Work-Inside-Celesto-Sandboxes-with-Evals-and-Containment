@@ -1,0 +1,7 @@
+{
+    "failed_step": 7,
+    "total_steps": 10,
+    "policy": "rollback",
+    "rationale": "Rollback via snapshot restore is the optimal failure-recovery policy for this detonation workload. Compared to resume (which risks executing from a corrupted mid-step state and is unreliable for security-sensitive analysis), rollback provides a clean, deterministic restart point. Compared to fresh-start (which discards all progress and re-downloads/re-installs from scratch), rollback preserves the baseline snapshot and skips steps 1-6, saving approximately 60% of wall-clock time. The cost overhead of storing one snapshot is negligible (<50MB for an Alpine microVM). Rollback is also simpler to reason about: we know exactly what state the sandbox is in after restore, which is critical when the goal is to detect whether a package tampered with the environment.",
+    "trace_path": "reports/failure_trace.jsonl"
+}
