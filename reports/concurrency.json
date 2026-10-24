@@ -1,52 +1,40 @@
 {
-  "concurrent_jobs": 5,
-  "overall_wall_clock_s": 5.258,
-  "breakage_notes": "No breakage observed \u2014 all concurrent jobs completed successfully with unique names",
-  "results": [
+  "jobs": [
     {
-      "job_index": 0,
       "sandbox_name": "sbx-zrcx4rvp",
       "package": "configreader",
       "started_at": "2026-10-24T15:08:45.893342+00:00",
       "wall_clock_s": 5.255,
-      "success": true,
-      "error": null
+      "success": true
     },
     {
-      "job_index": 1,
       "sandbox_name": "sbx-ugoj6xz9",
       "package": "dateformat",
       "started_at": "2026-10-24T15:08:45.895598+00:00",
       "wall_clock_s": 5.253,
-      "success": true,
-      "error": null
+      "success": true
     },
     {
-      "job_index": 2,
       "sandbox_name": "sbx-aw13na5e",
       "package": "envleaker",
       "started_at": "2026-10-24T15:08:45.895598+00:00",
       "wall_clock_s": 5.254,
-      "success": true,
-      "error": null
+      "success": true
     },
     {
-      "job_index": 3,
       "sandbox_name": "sbx-9wxotify",
       "package": "helloworld",
       "started_at": "2026-10-24T15:08:45.896910+00:00",
       "wall_clock_s": 5.251,
-      "success": true,
-      "error": null
+      "success": true
     },
     {
-      "job_index": 4,
       "sandbox_name": "sbx-jrcaf3pc",
       "package": "jsonutils",
       "started_at": "2026-10-24T15:08:45.897508+00:00",
       "wall_clock_s": 5.249,
-      "success": true,
-      "error": null
+      "success": true
     }
-  ]
+  ],
+  "breakage_notes": "No breakage observed — all 5 concurrent detonation jobs completed successfully with unique microVM sandbox names, zero disk collisions, and stable execution times."
 }
